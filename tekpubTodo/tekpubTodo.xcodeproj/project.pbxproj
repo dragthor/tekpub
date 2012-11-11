@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AACFC563164F26E9003CCC7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC562164F26E9003CCC7D /* UIKit.framework */; };
+		AACFC565164F26E9003CCC7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC564164F26E9003CCC7D /* Foundation.framework */; };
+		AACFC567164F26E9003CCC7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC566164F26E9003CCC7D /* CoreGraphics.framework */; };
+		AACFC56D164F26E9003CCC7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACFC56B164F26E9003CCC7D /* InfoPlist.strings */; };
+		AACFC56F164F26E9003CCC7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AACFC56E164F26E9003CCC7D /* main.m */; };
+		AACFC573164F26E9003CCC7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AACFC572164F26E9003CCC7D /* AppDelegate.m */; };
+		AACFC575164F26EA003CCC7D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AACFC574164F26EA003CCC7D /* Default.png */; };
+		AACFC577164F26EA003CCC7D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AACFC576164F26EA003CCC7D /* Default@2x.png */; };
+		AACFC579164F26EA003CCC7D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AACFC578164F26EA003CCC7D /* Default-568h@2x.png */; };
+		AACFC57C164F26EA003CCC7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACFC57B164F26EA003CCC7D /* ViewController.m */; };
+		AACFC57F164F26EA003CCC7D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACFC57D164F26EA003CCC7D /* ViewController.xib */; };
+		AAF174D8164FE90B005BBE68 /* tekpubTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174D7164FE90B005BBE68 /* tekpubTableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AACFC55E164F26E9003CCC7D /* tekpubTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tekpubTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACFC562164F26E9003CCC7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AACFC564164F26E9003CCC7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AACFC566164F26E9003CCC7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AACFC56A164F26E9003CCC7D /* tekpubTodo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tekpubTodo-Info.plist"; sourceTree = "<group>"; };
+		AACFC56C164F26E9003CCC7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AACFC56E164F26E9003CCC7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AACFC570164F26E9003CCC7D /* tekpubTodo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tekpubTodo-Prefix.pch"; sourceTree = "<group>"; };
+		AACFC571164F26E9003CCC7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AACFC572164F26E9003CCC7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AACFC574164F26EA003CCC7D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AACFC576164F26EA003CCC7D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AACFC578164F26EA003CCC7D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AACFC57A164F26EA003CCC7D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AACFC57B164F26EA003CCC7D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AACFC57E164F26EA003CCC7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		AAF174D6164FE90B005BBE68 /* tekpubTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tekpubTableView.h; sourceTree = "<group>"; };
+		AAF174D7164FE90B005BBE68 /* tekpubTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tekpubTableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AACFC55B164F26E9003CCC7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACFC563164F26E9003CCC7D /* UIKit.framework in Frameworks */,
+				AACFC565164F26E9003CCC7D /* Foundation.framework in Frameworks */,
+				AACFC567164F26E9003CCC7D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AACFC553164F26E9003CCC7D = {
+			isa = PBXGroup;
+			children = (
+				AACFC568164F26E9003CCC7D /* tekpubTodo */,
+				AACFC561164F26E9003CCC7D /* Frameworks */,
+				AACFC55F164F26E9003CCC7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AACFC55F164F26E9003CCC7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AACFC55E164F26E9003CCC7D /* tekpubTodo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AACFC561164F26E9003CCC7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACFC562164F26E9003CCC7D /* UIKit.framework */,
+				AACFC564164F26E9003CCC7D /* Foundation.framework */,
+				AACFC566164F26E9003CCC7D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AACFC568164F26E9003CCC7D /* tekpubTodo */ = {
+			isa = PBXGroup;
+			children = (
+				AACFC571164F26E9003CCC7D /* AppDelegate.h */,
+				AACFC572164F26E9003CCC7D /* AppDelegate.m */,
+				AACFC57A164F26EA003CCC7D /* ViewController.h */,
+				AACFC57B164F26EA003CCC7D /* ViewController.m */,
+				AACFC57D164F26EA003CCC7D /* ViewController.xib */,
+				AACFC569164F26E9003CCC7D /* Supporting Files */,
+				AAF174D6164FE90B005BBE68 /* tekpubTableView.h */,
+				AAF174D7164FE90B005BBE68 /* tekpubTableView.m */,
+			);
+			path = tekpubTodo;
+			sourceTree = "<group>";
+		};
+		AACFC569164F26E9003CCC7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AACFC56A164F26E9003CCC7D /* tekpubTodo-Info.plist */,
+				AACFC56B164F26E9003CCC7D /* InfoPlist.strings */,
+				AACFC56E164F26E9003CCC7D /* main.m */,
+				AACFC570164F26E9003CCC7D /* tekpubTodo-Prefix.pch */,
+				AACFC574164F26EA003CCC7D /* Default.png */,
+				AACFC576164F26EA003CCC7D /* Default@2x.png */,
+				AACFC578164F26EA003CCC7D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AACFC55D164F26E9003CCC7D /* tekpubTodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AACFC582164F26EA003CCC7D /* Build configuration list for PBXNativeTarget "tekpubTodo" */;
+			buildPhases = (
+				AACFC55A164F26E9003CCC7D /* Sources */,
+				AACFC55B164F26E9003CCC7D /* Frameworks */,
+				AACFC55C164F26E9003CCC7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tekpubTodo;
+			productName = tekpubTodo;
+			productReference = AACFC55E164F26E9003CCC7D /* tekpubTodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AACFC555164F26E9003CCC7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Kris Krause";
+			};
+			buildConfigurationList = AACFC558164F26E9003CCC7D /* Build configuration list for PBXProject "tekpubTodo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AACFC553164F26E9003CCC7D;
+			productRefGroup = AACFC55F164F26E9003CCC7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AACFC55D164F26E9003CCC7D /* tekpubTodo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AACFC55C164F26E9003CCC7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACFC56D164F26E9003CCC7D /* InfoPlist.strings in Resources */,
+				AACFC575164F26EA003CCC7D /* Default.png in Resources */,
+				AACFC577164F26EA003CCC7D /* Default@2x.png in Resources */,
+				AACFC579164F26EA003CCC7D /* Default-568h@2x.png in Resources */,
+				AACFC57F164F26EA003CCC7D /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AACFC55A164F26E9003CCC7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACFC56F164F26E9003CCC7D /* main.m in Sources */,
+				AACFC573164F26E9003CCC7D /* AppDelegate.m in Sources */,
+				AACFC57C164F26EA003CCC7D /* ViewController.m in Sources */,
+				AAF174D8164FE90B005BBE68 /* tekpubTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AACFC56B164F26E9003CCC7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AACFC56C164F26E9003CCC7D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AACFC57D164F26EA003CCC7D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AACFC57E164F26EA003CCC7D /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AACFC580164F26EA003CCC7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AACFC581164F26EA003CCC7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AACFC583164F26EA003CCC7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tekpubTodo/tekpubTodo-Prefix.pch";
+				INFOPLIST_FILE = "tekpubTodo/tekpubTodo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AACFC584164F26EA003CCC7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tekpubTodo/tekpubTodo-Prefix.pch";
+				INFOPLIST_FILE = "tekpubTodo/tekpubTodo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AACFC558164F26E9003CCC7D /* Build configuration list for PBXProject "tekpubTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACFC580164F26EA003CCC7D /* Debug */,
+				AACFC581164F26EA003CCC7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AACFC582164F26EA003CCC7D /* Build configuration list for PBXNativeTarget "tekpubTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACFC583164F26EA003CCC7D /* Debug */,
+				AACFC584164F26EA003CCC7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AACFC555164F26E9003CCC7D /* Project object */;
+}
