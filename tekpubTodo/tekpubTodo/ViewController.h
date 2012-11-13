@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
-   NSMutableArray *items; 
+   NSMutableArray *items;
 }
+
+-(IBAction) addButtonPushed;
 @end

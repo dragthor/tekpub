@@ -22,6 +22,10 @@
     [todo release];
 }
 
+-(IBAction) addButtonPushed {
+    NSLog(@"add button pushed");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
