@@ -7,12 +7,20 @@
 //
 
 #import "ViewController.h"
+#import "Todo.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+-(void) addTodo:(NSString *) todoText {
+    Todo *todo = [[Todo alloc] initWithText:todoText];
+    
+    [items addObject:todo];
+    [todo release];
+}
 
 - (void)viewDidLoad
 {
@@ -26,9 +34,9 @@
     
     items = [[NSMutableArray alloc] init];
     
-    [items addObject:@"Coffee"];
-    [items addObject:@"Shower"];
-    [items addObject:@"Shave"];
+    [self addTodo:@"Coffee"];
+    [self addTodo:@"Shower"];
+    [self addTodo:@"Shave"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,11 +52,34 @@
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    NSString *cellIdentifier = @"cell";
     
-    cell.textLabel.text = [items objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (cell == Nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
+    }
+    
+    Todo *todo = [items objectAtIndex:indexPath.row];
+    cell.textLabel.text = todo.text;
+    
+    if (todo.completed) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    Todo *todo = [items objectAtIndex:indexPath.row];
+    
+    todo.completed = !todo.completed;
+    
+    [tableView reloadData];
 }
 
 - (void) dealloc {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA157F1E16525688002F92F2 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = AA157F1D16525688002F92F2 /* Todo.m */; };
 		AACFC563164F26E9003CCC7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC562164F26E9003CCC7D /* UIKit.framework */; };
 		AACFC565164F26E9003CCC7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC564164F26E9003CCC7D /* Foundation.framework */; };
 		AACFC567164F26E9003CCC7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC566164F26E9003CCC7D /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA157F1C16525688002F92F2 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		AA157F1D16525688002F92F2 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
 		AACFC55E164F26E9003CCC7D /* tekpubTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tekpubTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACFC562164F26E9003CCC7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AACFC564164F26E9003CCC7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +97,8 @@
 				AACFC569164F26E9003CCC7D /* Supporting Files */,
 				AAF174D6164FE90B005BBE68 /* tekpubTableView.h */,
 				AAF174D7164FE90B005BBE68 /* tekpubTableView.m */,
+				AA157F1C16525688002F92F2 /* Todo.h */,
+				AA157F1D16525688002F92F2 /* Todo.m */,
 			);
 			path = tekpubTodo;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				AACFC573164F26E9003CCC7D /* AppDelegate.m in Sources */,
 				AACFC57C164F26EA003CCC7D /* ViewController.m in Sources */,
 				AAF174D8164FE90B005BBE68 /* tekpubTableView.m in Sources */,
+				AA157F1E16525688002F92F2 /* Todo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
