@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Todo.h"
+#import "tekpubEditorController.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,21 @@
 }
 
 -(IBAction) addButtonPushed {
-    NSLog(@"add button pushed");
+    tekpubEditorController *editor = [[tekpubEditorController alloc] initWithNibName:@"tekpubEditorController" bundle:nil];
+    
+    editor.delegate = self;
+    
+    [self presentModalViewController:editor animated:YES];
+    
+    [editor release];
+}
+
+-(void) todoEditor:(tekpubEditorController *) editor didFinishWithResults: (BOOL) result {
+    if (result) {
+        // save
+    }
+    
+    [self dismissViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad

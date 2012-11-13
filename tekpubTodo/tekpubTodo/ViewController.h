@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "tekpubEditorController.h"
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, tekpubEditorDelegate> {
    NSMutableArray *items;
 }
 

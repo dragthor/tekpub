@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AA157F1E16525688002F92F2 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = AA157F1D16525688002F92F2 /* Todo.m */; };
+		AACE1AD71652923C00CFE6F9 /* tekpubEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */; };
+		AACE1AD81652923C00CFE6F9 /* tekpubEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACE1AD61652923C00CFE6F9 /* tekpubEditorController.xib */; };
+		AACE1ADC1652944C00CFE6F9 /* tekpubEditorTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AACE1ADB1652944C00CFE6F9 /* tekpubEditorTableView.m */; };
 		AACFC563164F26E9003CCC7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC562164F26E9003CCC7D /* UIKit.framework */; };
 		AACFC565164F26E9003CCC7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC564164F26E9003CCC7D /* Foundation.framework */; };
 		AACFC567164F26E9003CCC7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC566164F26E9003CCC7D /* CoreGraphics.framework */; };
@@ -25,6 +28,11 @@
 /* Begin PBXFileReference section */
 		AA157F1C16525688002F92F2 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
 		AA157F1D16525688002F92F2 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		AACE1AD41652923C00CFE6F9 /* tekpubEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tekpubEditorController.h; sourceTree = "<group>"; };
+		AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tekpubEditorController.m; sourceTree = "<group>"; };
+		AACE1AD61652923C00CFE6F9 /* tekpubEditorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tekpubEditorController.xib; sourceTree = "<group>"; };
+		AACE1ADA1652944C00CFE6F9 /* tekpubEditorTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tekpubEditorTableView.h; sourceTree = "<group>"; };
+		AACE1ADB1652944C00CFE6F9 /* tekpubEditorTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tekpubEditorTableView.m; sourceTree = "<group>"; };
 		AACFC55E164F26E9003CCC7D /* tekpubTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tekpubTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACFC562164F26E9003CCC7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AACFC564164F26E9003CCC7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,9 +104,14 @@
 				AACFC57D164F26EA003CCC7D /* ViewController.xib */,
 				AACFC569164F26E9003CCC7D /* Supporting Files */,
 				AAF174D6164FE90B005BBE68 /* tekpubTableView.h */,
+				AACE1ADA1652944C00CFE6F9 /* tekpubEditorTableView.h */,
+				AACE1ADB1652944C00CFE6F9 /* tekpubEditorTableView.m */,
 				AAF174D7164FE90B005BBE68 /* tekpubTableView.m */,
 				AA157F1C16525688002F92F2 /* Todo.h */,
 				AA157F1D16525688002F92F2 /* Todo.m */,
+				AACE1AD41652923C00CFE6F9 /* tekpubEditorController.h */,
+				AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */,
+				AACE1AD61652923C00CFE6F9 /* tekpubEditorController.xib */,
 			);
 			path = tekpubTodo;
 			sourceTree = "<group>";
@@ -173,6 +186,7 @@
 				AACFC577164F26EA003CCC7D /* Default@2x.png in Resources */,
 				AACFC579164F26EA003CCC7D /* Default-568h@2x.png in Resources */,
 				AACFC57F164F26EA003CCC7D /* ViewController.xib in Resources */,
+				AACE1AD81652923C00CFE6F9 /* tekpubEditorController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +202,8 @@
 				AACFC57C164F26EA003CCC7D /* ViewController.m in Sources */,
 				AAF174D8164FE90B005BBE68 /* tekpubTableView.m in Sources */,
 				AA157F1E16525688002F92F2 /* Todo.m in Sources */,
+				AACE1AD71652923C00CFE6F9 /* tekpubEditorController.m in Sources */,
+				AACE1ADC1652944C00CFE6F9 /* tekpubEditorTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
