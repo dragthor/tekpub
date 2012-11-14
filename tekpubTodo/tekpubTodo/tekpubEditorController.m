@@ -37,15 +37,47 @@
     }
 }
 
+-(NSString *) text {
+    return [textField text];
+}
+
+-(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Text";
+}
+
+-(NSString *) tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    return @"Please enter a description";
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    [textField becomeFirstResponder];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: @""] autorelease];
-
+    ;
+    CGRect frame = CGRectInset(cell.contentView.bounds, 25, 10);
+    
+    textField = [[UITextField alloc] initWithFrame:frame];
+    
+    textField.delegate = self;
+    
+    [cell addSubview:textField];
+    [textField release];
+    
     return cell;
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textDescField {
+    [textField resignFirstResponder];
+    return NO;
 }
 
 - (void)viewDidLoad

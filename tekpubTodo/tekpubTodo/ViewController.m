@@ -36,9 +36,32 @@
 -(void) todoEditor:(tekpubEditorController *) editor didFinishWithResults: (BOOL) result {
     if (result) {
         // save
+        NSString *text = [editor text];
+        
+        Todo *todo = [[Todo alloc] initWithText:text];
+        
+        [items addObject:todo];
+        
+        [todo release];
     }
     
     [self dismissViewControllerAnimated:YES completion:^(void) {}];
+}
+
+-(void)prePopulateItems {
+    items = [[NSMutableArray alloc] init];
+    
+    Todo *coffee = [[Todo alloc] initWithText:@"Coffee"];
+    [items addObject: coffee];
+    [coffee release];
+    
+    Todo *shower = [[Todo alloc] initWithText:@"Shower"];
+    [items addObject: shower];
+    [shower release];
+    
+    Todo *shave = [[Todo alloc] initWithText:@"Shave"];
+    [items addObject: shave];
+    [shave release];
 }
 
 - (void)viewDidLoad
@@ -51,11 +74,7 @@
 	[alert show];
 	[alert release];
     
-    items = [[NSMutableArray alloc] init];
-    
-    [self addTodo:@"Coffee"];
-    [self addTodo:@"Shower"];
-    [self addTodo:@"Shave"];
+    [self prePopulateItems];
 }
 
 - (void)didReceiveMemoryWarning

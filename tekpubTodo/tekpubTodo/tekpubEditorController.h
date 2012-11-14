@@ -10,11 +10,14 @@
 
 @protocol tekpubEditorDelegate;
 
-@interface tekpubEditorController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface tekpubEditorController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate> {
+    
     id<tekpubEditorDelegate> delegate;
+    UITextField *textField;
 }
 
 @property (nonatomic, assign) id<tekpubEditorDelegate> delegate;
+@property (nonatomic, readonly) NSString *text;
 
 -(IBAction) save;
 -(IBAction) cancel;
