@@ -19,7 +19,7 @@
 -(void) addTodo:(NSString *) todoText {
     Todo *todo = [[Todo alloc] initWithText:todoText];
     
-    [items addObject:todo];
+    [todoItems addObject:todo];
     [todo release];
 }
 
@@ -33,6 +33,12 @@
     [editor release];
 }
 
+-(IBAction) editButtonPushed {
+    editting = !editting;
+    
+    [tableViewReference setEditing:editting animated:YES];
+}
+
 -(void) todoEditor:(tekpubEditorController *) editor didFinishWithResults: (BOOL) result {
     if (result) {
         // save
@@ -40,27 +46,29 @@
         
         Todo *todo = [[Todo alloc] initWithText:text];
         
-        [items addObject:todo];
+        [todoItems addObject:todo];
         
         [todo release];
+        
+        [tableViewReference reloadData];
     }
     
     [self dismissViewControllerAnimated:YES completion:^(void) {}];
 }
 
 -(void)prePopulateItems {
-    items = [[NSMutableArray alloc] init];
+    todoItems = [[NSMutableArray alloc] init];
     
     Todo *coffee = [[Todo alloc] initWithText:@"Coffee"];
-    [items addObject: coffee];
+    [todoItems addObject: coffee];
     [coffee release];
     
     Todo *shower = [[Todo alloc] initWithText:@"Shower"];
-    [items addObject: shower];
+    [todoItems addObject: shower];
     [shower release];
     
     Todo *shave = [[Todo alloc] initWithText:@"Shave"];
-    [items addObject: shave];
+    [todoItems addObject: shave];
     [shave release];
 }
 
@@ -85,7 +93,7 @@
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [items count];
+    return [todoItems count];
 }
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -98,7 +106,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
     }
     
-    Todo *todo = [items objectAtIndex:indexPath.row];
+    Todo *todo = [todoItems objectAtIndex:indexPath.row];
     cell.textLabel.text = todo.text;
     
     if (todo.completed) {
@@ -113,7 +121,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    Todo *todo = [items objectAtIndex:indexPath.row];
+    Todo *todo = [todoItems objectAtIndex:indexPath.row];
     
     todo.completed = !todo.completed;
     
@@ -121,7 +129,7 @@
 }
 
 - (void) dealloc {
-    [items release];
+    [todoItems release];
     
     [super dealloc];
 }

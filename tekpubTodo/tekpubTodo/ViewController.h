@@ -10,8 +10,13 @@
 #import "tekpubEditorController.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, tekpubEditorDelegate> {
-   NSMutableArray *items;
+    
+    NSMutableArray *todoItems;
+    IBOutlet UITableView *tableViewReference;
+    BOOL editting;
 }
 
 -(IBAction) addButtonPushed;
+-(IBAction) editButtonPushed;
+
 @end
