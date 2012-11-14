@@ -15,6 +15,10 @@
 }
 
 @property (nonatomic, assign) id<tekpubEditorDelegate> delegate;
+
+-(IBAction) save;
+-(IBAction) cancel;
+
 @end
 
 @protocol tekpubEditorDelegate

@@ -25,6 +25,18 @@
     return self;
 }
 
+-(IBAction) save {
+    if (delegate != nil) {
+        [delegate todoEditor:self didFinishWithResults:YES];
+    }
+}
+
+-(IBAction) cancel {
+    if (delegate != nil) {
+        [delegate todoEditor:self didFinishWithResults:NO];
+    }
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }

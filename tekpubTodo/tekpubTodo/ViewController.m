@@ -28,7 +28,7 @@
     
     editor.delegate = self;
     
-    [self presentModalViewController:editor animated:YES];
+    [self presentViewController:editor animated:YES completion:^(void) {}];
     
     [editor release];
 }
@@ -38,7 +38,7 @@
         // save
     }
     
-    [self dismissViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:^(void) {}];
 }
 
 - (void)viewDidLoad
