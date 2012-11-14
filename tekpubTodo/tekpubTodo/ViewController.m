@@ -27,13 +27,7 @@
 }
 
 -(IBAction) addButtonPushed {
-    tekpubEditorController *editor = [[tekpubEditorController alloc] initWithNibName:@"tekpubEditorController" bundle:nil];
-    
-    editor.delegate = self;
-    
-    [self presentViewController:editor animated:YES completion:^(void) {}];
-    
-    [editor release];
+    [self presentTodoEditor: nil];
 }
 
 -(IBAction) editButtonPushed {
@@ -53,6 +47,20 @@
     }
     
     [self dismissViewControllerAnimated:YES completion:^(void) {}];
+}
+
+-(void) presentTodoEditor:(NSString *)text {
+    tekpubEditorController *editor = [[tekpubEditorController alloc] initWithNibName:@"tekpubEditorController" bundle:nil];
+    
+    if (text != nil) {
+        editor.defaultText = text;
+    }
+    
+    editor.delegate = self;
+    
+    [self presentViewController:editor animated:YES completion:^(void){}];
+    
+    [editor release];
 }
 
 -(void)prePopulateItems {
@@ -117,17 +125,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    Todo *todo = [todoItems objectAtIndex:indexPath.row];
+    
     if (editting) {
+        [self presentTodoEditor: todo.text];
         
-    
     } else {
-        Todo *todo = [todoItems objectAtIndex:indexPath.row];
-    
         todo.completed = !todo.completed;
+        
         [tableView reloadData];
     }
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    //[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -136,7 +145,6 @@
         [todoItems removeObjectAtIndex:indexPath.row];
         
         [tableView deleteRowsAtIndexPaths: [NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationRight];
-        
     }
 }
 

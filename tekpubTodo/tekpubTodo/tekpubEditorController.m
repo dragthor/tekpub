@@ -14,7 +14,7 @@
 
 @implementation tekpubEditorController
 
-@synthesize delegate;
+@synthesize delegate, defaultText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -62,10 +62,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: @""] autorelease];
-    ;
+    
     CGRect frame = CGRectInset(cell.contentView.bounds, 25, 10);
     
     textField = [[UITextField alloc] initWithFrame:frame];
+    
+    if (defaultText != nil) {
+        textField.text = defaultText;
+    }
     
     textField.delegate = self;
     

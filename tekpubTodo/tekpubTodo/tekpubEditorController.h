@@ -14,10 +14,12 @@
     
     id<tekpubEditorDelegate> delegate;
     UITextField *textField;
+    NSString *defaultText;
 }
 
 @property (nonatomic, assign) id<tekpubEditorDelegate> delegate;
 @property (nonatomic, readonly) NSString *text;
+@property (nonatomic, copy) NSString *defaultText;
 
 -(IBAction) save;
 -(IBAction) cancel;
