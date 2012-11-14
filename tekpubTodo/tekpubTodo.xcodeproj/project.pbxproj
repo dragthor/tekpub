@@ -123,9 +123,9 @@
 				AACFC57B164F26EA003CCC7D /* ViewController.m */,
 				AACFC569164F26E9003CCC7D /* Supporting Files */,
 				AAF174D6164FE90B005BBE68 /* tekpubTableView.h */,
+				AAF174D7164FE90B005BBE68 /* tekpubTableView.m */,
 				AACE1ADA1652944C00CFE6F9 /* tekpubEditorTableView.h */,
 				AACE1ADB1652944C00CFE6F9 /* tekpubEditorTableView.m */,
-				AAF174D7164FE90B005BBE68 /* tekpubTableView.m */,
 				AACE1AD41652923C00CFE6F9 /* tekpubEditorController.h */,
 				AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */,
 			);

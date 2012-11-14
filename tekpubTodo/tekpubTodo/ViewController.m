@@ -17,10 +17,12 @@
 @implementation ViewController
 
 -(void) addTodo:(NSString *) todoText {
-    Todo *todo = [[Todo alloc] initWithText:todoText];
+    if (todoText != nil && todoText.length > 0) {
+        Todo *todo = [[Todo alloc] initWithText:todoText];
     
-    [todoItems addObject:todo];
-    [todo release];
+        [todoItems addObject:todo];
+        [todo release];
+    }
 }
 
 -(IBAction) addButtonPushed {
@@ -44,11 +46,7 @@
         // save
         NSString *text = [editor text];
         
-        Todo *todo = [[Todo alloc] initWithText:text];
-        
-        [todoItems addObject:todo];
-        
-        [todo release];
+        [self addTodo:text];
         
         [tableViewReference reloadData];
     }
@@ -126,6 +124,16 @@
     todo.completed = !todo.completed;
     
     [tableView reloadData];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [todoItems removeObjectAtIndex:indexPath.row];
+        
+        [tableView deleteRowsAtIndexPaths: [NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationRight];
+        
+    }
 }
 
 - (void) dealloc {
