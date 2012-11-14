@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Todo.h"
+#import "AlertBox.h"
 #import "tekpubEditorController.h"
 
 @interface ViewController ()
@@ -75,10 +76,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Tekpub Todo" message: @"Welcome to the todo list app" delegate: self cancelButtonTitle: @"Close" otherButtonTitles: nil];
-    
-	[alert show];
-	[alert release];
+    [AlertBox showAlert:@"Todo" : @"Welcome to the todo list app."];
     
     [self prePopulateItems];
 }
@@ -119,11 +117,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    Todo *todo = [todoItems objectAtIndex:indexPath.row];
+    if (editting) {
+        
     
-    todo.completed = !todo.completed;
+    } else {
+        Todo *todo = [todoItems objectAtIndex:indexPath.row];
     
-    [tableView reloadData];
+        todo.completed = !todo.completed;
+        [tableView reloadData];
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {

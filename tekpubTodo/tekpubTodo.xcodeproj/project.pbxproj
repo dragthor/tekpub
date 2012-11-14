@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA157F1E16525688002F92F2 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = AA157F1D16525688002F92F2 /* Todo.m */; };
+		AA8D727E1653C97200AE9065 /* AlertBox.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8D727D1653C97200AE9065 /* AlertBox.m */; };
 		AACE1AD71652923C00CFE6F9 /* tekpubEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */; };
 		AACE1AD81652923C00CFE6F9 /* tekpubEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACE1AD61652923C00CFE6F9 /* tekpubEditorController.xib */; };
 		AACE1ADC1652944C00CFE6F9 /* tekpubEditorTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AACE1ADB1652944C00CFE6F9 /* tekpubEditorTableView.m */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		AA157F1C16525688002F92F2 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
 		AA157F1D16525688002F92F2 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		AA8D727C1653C97200AE9065 /* AlertBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertBox.h; sourceTree = "<group>"; };
+		AA8D727D1653C97200AE9065 /* AlertBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertBox.m; sourceTree = "<group>"; };
 		AACE1AD41652923C00CFE6F9 /* tekpubEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tekpubEditorController.h; sourceTree = "<group>"; };
 		AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tekpubEditorController.m; sourceTree = "<group>"; };
 		AACE1AD61652923C00CFE6F9 /* tekpubEditorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tekpubEditorController.xib; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 			children = (
 				AACE1AD61652923C00CFE6F9 /* tekpubEditorController.xib */,
 				AACFC57D164F26EA003CCC7D /* ViewController.xib */,
+				AA8D727C1653C97200AE9065 /* AlertBox.h */,
+				AA8D727D1653C97200AE9065 /* AlertBox.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				AA157F1E16525688002F92F2 /* Todo.m in Sources */,
 				AACE1AD71652923C00CFE6F9 /* tekpubEditorController.m in Sources */,
 				AACE1ADC1652944C00CFE6F9 /* tekpubEditorTableView.m in Sources */,
+				AA8D727E1653C97200AE9065 /* AlertBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
