@@ -19,14 +19,33 @@
 
 -(void) addTodo:(NSString *) todoText {
     if (todoText != nil && todoText.length > 0) {
-        Todo *todo = [[Todo alloc] initWithText:todoText];
-    
-        [todoItems addObject:todo];
-        [todo release];
+        BOOL found = NO;
+        
+        if (lastEditTodo == nil) {
+        
+            Todo *todo = [[Todo alloc] initWithText:todoText];
+            
+            for (Todo *item in todoItems) {
+                if ([item.text isEqualToString:todo.text]) {
+                    found = YES;
+                    break;
+                }
+            }
+            
+            if (found == NO) {
+                [todoItems addObject:todo];
+            }
+            
+            [todo release];
+        } else {
+            lastEditTodo.text = todoText;
+        }
     }
 }
 
 -(IBAction) addButtonPushed {
+    lastEditTodo = nil;
+    
     [self presentTodoEditor: nil];
 }
 
@@ -38,7 +57,7 @@
 
 -(void) todoEditor:(tekpubEditorController *) editor didFinishWithResults: (BOOL) result {
     if (result) {
-        // save
+        // handle save
         NSString *text = [editor text];
         
         [self addTodo:text];
@@ -128,6 +147,8 @@
     Todo *todo = [todoItems objectAtIndex:indexPath.row];
     
     if (editting) {
+        lastEditTodo = todo;
+        
         [self presentTodoEditor: todo.text];
         
     } else {
