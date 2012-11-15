@@ -14,7 +14,7 @@
     
     NSMutableArray *todoItems;
     IBOutlet UITableView *tableViewReference;
-    BOOL editting;
+    BOOL isEditting;
     Todo *lastEditTodo;
 }
 

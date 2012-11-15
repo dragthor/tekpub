@@ -11,7 +11,6 @@
 		AA8D727E1653C97200AE9065 /* AlertBox.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8D727D1653C97200AE9065 /* AlertBox.m */; };
 		AACE1AD71652923C00CFE6F9 /* tekpubEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */; };
 		AACE1AD81652923C00CFE6F9 /* tekpubEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACE1AD61652923C00CFE6F9 /* tekpubEditorController.xib */; };
-		AACE1ADC1652944C00CFE6F9 /* tekpubEditorTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AACE1ADB1652944C00CFE6F9 /* tekpubEditorTableView.m */; };
 		AACFC563164F26E9003CCC7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC562164F26E9003CCC7D /* UIKit.framework */; };
 		AACFC565164F26E9003CCC7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC564164F26E9003CCC7D /* Foundation.framework */; };
 		AACFC567164F26E9003CCC7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFC566164F26E9003CCC7D /* CoreGraphics.framework */; };
@@ -21,9 +20,8 @@
 		AACFC575164F26EA003CCC7D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AACFC574164F26EA003CCC7D /* Default.png */; };
 		AACFC577164F26EA003CCC7D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AACFC576164F26EA003CCC7D /* Default@2x.png */; };
 		AACFC579164F26EA003CCC7D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AACFC578164F26EA003CCC7D /* Default-568h@2x.png */; };
-		AACFC57C164F26EA003CCC7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACFC57B164F26EA003CCC7D /* ViewController.m */; };
-		AACFC57F164F26EA003CCC7D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACFC57D164F26EA003CCC7D /* ViewController.xib */; };
-		AAF174D8164FE90B005BBE68 /* tekpubTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF174D7164FE90B005BBE68 /* tekpubTableView.m */; };
+		AACFC57C164F26EA003CCC7D /* tekpubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACFC57B164F26EA003CCC7D /* tekpubViewController.m */; };
+		AACFC57F164F26EA003CCC7D /* tekpubTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACFC57D164F26EA003CCC7D /* tekpubTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +32,6 @@
 		AACE1AD41652923C00CFE6F9 /* tekpubEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tekpubEditorController.h; sourceTree = "<group>"; };
 		AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tekpubEditorController.m; sourceTree = "<group>"; };
 		AACE1AD61652923C00CFE6F9 /* tekpubEditorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tekpubEditorController.xib; sourceTree = "<group>"; };
-		AACE1ADA1652944C00CFE6F9 /* tekpubEditorTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tekpubEditorTableView.h; sourceTree = "<group>"; };
-		AACE1ADB1652944C00CFE6F9 /* tekpubEditorTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tekpubEditorTableView.m; sourceTree = "<group>"; };
 		AACFC55E164F26E9003CCC7D /* tekpubTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tekpubTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACFC562164F26E9003CCC7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AACFC564164F26E9003CCC7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,11 +45,9 @@
 		AACFC574164F26EA003CCC7D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		AACFC576164F26EA003CCC7D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AACFC578164F26EA003CCC7D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AACFC57A164F26EA003CCC7D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AACFC57B164F26EA003CCC7D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AACFC57E164F26EA003CCC7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		AAF174D6164FE90B005BBE68 /* tekpubTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tekpubTableView.h; sourceTree = "<group>"; };
-		AAF174D7164FE90B005BBE68 /* tekpubTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tekpubTableView.m; sourceTree = "<group>"; };
+		AACFC57A164F26EA003CCC7D /* tekpubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tekpubViewController.h; sourceTree = "<group>"; };
+		AACFC57B164F26EA003CCC7D /* tekpubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tekpubViewController.m; sourceTree = "<group>"; };
+		AACFC57E164F26EA003CCC7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/tekpubTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +77,22 @@
 			isa = PBXGroup;
 			children = (
 				AACE1AD61652923C00CFE6F9 /* tekpubEditorController.xib */,
-				AACFC57D164F26EA003CCC7D /* ViewController.xib */,
+				AACFC57D164F26EA003CCC7D /* tekpubTableViewController.xib */,
 				AA8D727C1653C97200AE9065 /* AlertBox.h */,
 				AA8D727D1653C97200AE9065 /* AlertBox.m */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		AA4C2BE216552CE30039227E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AACE1AD41652923C00CFE6F9 /* tekpubEditorController.h */,
+				AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */,
+				AACFC57A164F26EA003CCC7D /* tekpubViewController.h */,
+				AACFC57B164F26EA003CCC7D /* tekpubViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		AACFC553164F26E9003CCC7D = {
@@ -120,19 +125,12 @@
 		AACFC568164F26E9003CCC7D /* tekpubTodo */ = {
 			isa = PBXGroup;
 			children = (
+				AA4C2BE216552CE30039227E /* ViewControllers */,
 				AA1F19F116529BDD00A9590D /* UI */,
 				AA1F19EF16529B8F00A9590D /* Models */,
 				AACFC571164F26E9003CCC7D /* AppDelegate.h */,
 				AACFC572164F26E9003CCC7D /* AppDelegate.m */,
-				AACFC57A164F26EA003CCC7D /* ViewController.h */,
-				AACFC57B164F26EA003CCC7D /* ViewController.m */,
 				AACFC569164F26E9003CCC7D /* Supporting Files */,
-				AAF174D6164FE90B005BBE68 /* tekpubTableView.h */,
-				AAF174D7164FE90B005BBE68 /* tekpubTableView.m */,
-				AACE1ADA1652944C00CFE6F9 /* tekpubEditorTableView.h */,
-				AACE1ADB1652944C00CFE6F9 /* tekpubEditorTableView.m */,
-				AACE1AD41652923C00CFE6F9 /* tekpubEditorController.h */,
-				AACE1AD51652923C00CFE6F9 /* tekpubEditorController.m */,
 			);
 			path = tekpubTodo;
 			sourceTree = "<group>";
@@ -206,7 +204,7 @@
 				AACFC575164F26EA003CCC7D /* Default.png in Resources */,
 				AACFC577164F26EA003CCC7D /* Default@2x.png in Resources */,
 				AACFC579164F26EA003CCC7D /* Default-568h@2x.png in Resources */,
-				AACFC57F164F26EA003CCC7D /* ViewController.xib in Resources */,
+				AACFC57F164F26EA003CCC7D /* tekpubTableViewController.xib in Resources */,
 				AACE1AD81652923C00CFE6F9 /* tekpubEditorController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,11 +218,9 @@
 			files = (
 				AACFC56F164F26E9003CCC7D /* main.m in Sources */,
 				AACFC573164F26E9003CCC7D /* AppDelegate.m in Sources */,
-				AACFC57C164F26EA003CCC7D /* ViewController.m in Sources */,
-				AAF174D8164FE90B005BBE68 /* tekpubTableView.m in Sources */,
+				AACFC57C164F26EA003CCC7D /* tekpubViewController.m in Sources */,
 				AA157F1E16525688002F92F2 /* Todo.m in Sources */,
 				AACE1AD71652923C00CFE6F9 /* tekpubEditorController.m in Sources */,
-				AACE1ADC1652944C00CFE6F9 /* tekpubEditorTableView.m in Sources */,
 				AA8D727E1653C97200AE9065 /* AlertBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,12 +236,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		AACFC57D164F26EA003CCC7D /* ViewController.xib */ = {
+		AACFC57D164F26EA003CCC7D /* tekpubTableViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AACFC57E164F26EA003CCC7D /* en */,
 			);
-			name = ViewController.xib;
+			name = tekpubTableViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

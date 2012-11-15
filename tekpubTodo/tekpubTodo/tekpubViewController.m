@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Kris Krause. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "tekpubViewController.h"
 #import "Todo.h"
 #import "AlertBox.h"
 #import "tekpubEditorController.h"
@@ -50,9 +50,9 @@
 }
 
 -(IBAction) editButtonPushed {
-    editting = !editting;
+    isEditting = !isEditting;
     
-    [tableViewReference setEditing:editting animated:YES];
+    [tableViewReference setEditing:isEditting animated:YES];
 }
 
 -(void) todoEditor:(tekpubEditorController *) editor didFinishWithResults: (BOOL) result {
@@ -146,7 +146,7 @@
     
     Todo *todo = [todoItems objectAtIndex:indexPath.row];
     
-    if (editting) {
+    if (isEditting) {
         lastEditTodo = todo;
         
         [self presentTodoEditor: todo.text];
