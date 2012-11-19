@@ -68,6 +68,7 @@
 		AAE2899A165A455000CE3A87 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		AAE2899C165A455000CE3A87 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		AAE2899D165A455000CE3A87 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		AAE289BA165A49BF00CE3A87 /* todo.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = todo.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 		AACBC1581655B65900B31303 /* tekpubTodoDb */ = {
 			isa = PBXGroup;
 			children = (
+				AAE289B8165A493700CE3A87 /* Resources */,
 				AAE28991165A455000CE3A87 /* Libraries */,
 				AACBC1841655B77300B31303 /* UI */,
 				AACBC17A1655B76600B31303 /* ViewControllers */,
@@ -197,6 +199,14 @@
 				AAE2899D165A455000CE3A87 /* FMResultSet.m */,
 			);
 			path = FMDB;
+			sourceTree = "<group>";
+		};
+		AAE289B8165A493700CE3A87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAE289BA165A49BF00CE3A87 /* todo.db */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
