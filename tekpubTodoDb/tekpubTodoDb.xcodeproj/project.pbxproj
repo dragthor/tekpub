@@ -23,6 +23,12 @@
 		AACBC1891655B77300B31303 /* AlertBox.m in Sources */ = {isa = PBXBuildFile; fileRef = AACBC1861655B77300B31303 /* AlertBox.m */; };
 		AACBC18A1655B77300B31303 /* tekpubEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACBC1871655B77300B31303 /* tekpubEditorController.xib */; };
 		AACBC18B1655B77300B31303 /* tekpubTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACBC1881655B77300B31303 /* tekpubTableViewController.xib */; };
+		AACBC1A11655BFC100B31303 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBC18C1655BDF200B31303 /* libsqlite3.dylib */; };
+		AAE2899E165A455000CE3A87 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE28994165A455000CE3A87 /* FMDatabase.m */; };
+		AAE2899F165A455000CE3A87 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE28996165A455000CE3A87 /* FMDatabaseAdditions.m */; };
+		AAE289A0165A455000CE3A87 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE28998165A455000CE3A87 /* FMDatabasePool.m */; };
+		AAE289A1165A455000CE3A87 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE2899A165A455000CE3A87 /* FMDatabaseQueue.m */; };
+		AAE289A3165A455000CE3A87 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE2899D165A455000CE3A87 /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +57,17 @@
 		AACBC1861655B77300B31303 /* AlertBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertBox.m; sourceTree = "<group>"; };
 		AACBC1871655B77300B31303 /* tekpubEditorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tekpubEditorController.xib; sourceTree = "<group>"; };
 		AACBC1881655B77300B31303 /* tekpubTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tekpubTableViewController.xib; sourceTree = "<group>"; };
+		AACBC18C1655BDF200B31303 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		AAE28993165A455000CE3A87 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		AAE28994165A455000CE3A87 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		AAE28995165A455000CE3A87 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		AAE28996165A455000CE3A87 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		AAE28997165A455000CE3A87 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		AAE28998165A455000CE3A87 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		AAE28999165A455000CE3A87 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		AAE2899A165A455000CE3A87 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		AAE2899C165A455000CE3A87 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		AAE2899D165A455000CE3A87 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACBC1A11655BFC100B31303 /* libsqlite3.dylib in Frameworks */,
 				AACBC1531655B65900B31303 /* UIKit.framework in Frameworks */,
 				AACBC1551655B65900B31303 /* Foundation.framework in Frameworks */,
 				AACBC1571655B65900B31303 /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +88,7 @@
 		AACBC1431655B65900B31303 = {
 			isa = PBXGroup;
 			children = (
+				AACBC18C1655BDF200B31303 /* libsqlite3.dylib */,
 				AACBC1581655B65900B31303 /* tekpubTodoDb */,
 				AACBC1511655B65900B31303 /* Frameworks */,
 				AACBC14F1655B65900B31303 /* Products */,
@@ -97,6 +116,7 @@
 		AACBC1581655B65900B31303 /* tekpubTodoDb */ = {
 			isa = PBXGroup;
 			children = (
+				AAE28991165A455000CE3A87 /* Libraries */,
 				AACBC1841655B77300B31303 /* UI */,
 				AACBC17A1655B76600B31303 /* ViewControllers */,
 				AACBC1761655B74A00B31303 /* Models */,
@@ -152,6 +172,31 @@
 				AACBC1881655B77300B31303 /* tekpubTableViewController.xib */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		AAE28991165A455000CE3A87 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				AAE28992165A455000CE3A87 /* FMDB */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		AAE28992165A455000CE3A87 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				AAE28993165A455000CE3A87 /* FMDatabase.h */,
+				AAE28994165A455000CE3A87 /* FMDatabase.m */,
+				AAE28995165A455000CE3A87 /* FMDatabaseAdditions.h */,
+				AAE28996165A455000CE3A87 /* FMDatabaseAdditions.m */,
+				AAE28997165A455000CE3A87 /* FMDatabasePool.h */,
+				AAE28998165A455000CE3A87 /* FMDatabasePool.m */,
+				AAE28999165A455000CE3A87 /* FMDatabaseQueue.h */,
+				AAE2899A165A455000CE3A87 /* FMDatabaseQueue.m */,
+				AAE2899C165A455000CE3A87 /* FMResultSet.h */,
+				AAE2899D165A455000CE3A87 /* FMResultSet.m */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +273,11 @@
 				AACBC1821655B76600B31303 /* tekpubTableViewController.m in Sources */,
 				AACBC1831655B76600B31303 /* tekpubViewController.m in Sources */,
 				AACBC1891655B77300B31303 /* AlertBox.m in Sources */,
+				AAE2899E165A455000CE3A87 /* FMDatabase.m in Sources */,
+				AAE2899F165A455000CE3A87 /* FMDatabaseAdditions.m in Sources */,
+				AAE289A0165A455000CE3A87 /* FMDatabasePool.m in Sources */,
+				AAE289A1165A455000CE3A87 /* FMDatabaseQueue.m in Sources */,
+				AAE289A3165A455000CE3A87 /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +386,7 @@
 				AACBC1741655B65900B31303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
