@@ -17,7 +17,7 @@
     NSString *defaultText;
 }
 
-@property (nonatomic, assign) id<tekpubEditorDelegate> delegate;
+@property (nonatomic, weak) id<tekpubEditorDelegate> delegate;
 @property (nonatomic, readonly) NSString *text;
 @property (nonatomic, copy) NSString *defaultText;
 
