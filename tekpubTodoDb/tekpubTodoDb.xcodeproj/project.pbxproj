@@ -29,6 +29,7 @@
 		AAE289A0165A455000CE3A87 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE28998165A455000CE3A87 /* FMDatabasePool.m */; };
 		AAE289A1165A455000CE3A87 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE2899A165A455000CE3A87 /* FMDatabaseQueue.m */; };
 		AAE289A3165A455000CE3A87 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE2899D165A455000CE3A87 /* FMResultSet.m */; };
+		AAE289BB165A4B3E00CE3A87 /* todo.db in Resources */ = {isa = PBXBuildFile; fileRef = AAE289BA165A49BF00CE3A87 /* todo.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -266,6 +267,7 @@
 				AACBC1691655B65900B31303 /* Default-568h@2x.png in Resources */,
 				AACBC18A1655B77300B31303 /* tekpubEditorController.xib in Resources */,
 				AACBC18B1655B77300B31303 /* tekpubTableViewController.xib in Resources */,
+				AAE289BB165A4B3E00CE3A87 /* todo.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

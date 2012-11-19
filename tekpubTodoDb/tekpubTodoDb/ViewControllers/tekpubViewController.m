@@ -10,6 +10,7 @@
 #import "Todo.h"
 #import "AlertBox.h"
 #import "tekpubEditorController.h"
+#import "FMDatabase.h"
 
 @interface ViewController ()
 
@@ -82,19 +83,35 @@
 -(void)prePopulateItems {
     todoItems = [[NSMutableArray alloc] init];
     
-    Todo *coffee = [[Todo alloc] initWithText:@"Coffee"];
-    [todoItems addObject: coffee];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"todo" ofType: @"db"];
     
-    Todo *shower = [[Todo alloc] initWithText:@"Shower"];
-    [todoItems addObject: shower];
+    FMDatabase *db = [FMDatabase databaseWithPath: path];
     
-    Todo *shave = [[Todo alloc] initWithText:@"Shave"];
-    [todoItems addObject: shave];
+    @try {
+        if (![db open]) {
+            [AlertBox showAlert:@"Todo Error" :@"Unable to open db."];
+            return;
+        }
+        
+        FMResultSet *rs = [db executeQuery:@"select * from todos"];
+        
+        while([rs next]){
+            NSString *todoText = [rs stringForColumn:@"text"];
+            
+            Todo *todo = [[Todo alloc] initWithText:todoText];
+            [todoItems addObject: todo];
+        }
+    } @catch (NSException *err) {
+        [AlertBox showAlert:@"Todo Error" :@"Error loading todo items from db."];
+    } @finally {
+        [db close];
+    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     
     [AlertBox showAlert:@"Todo" : @"Welcome to the todo list app."];
