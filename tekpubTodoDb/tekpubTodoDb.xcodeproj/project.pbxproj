@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAC480A9165E5D6C00EB5382 /* 296-pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = AAC480A7165E5D6C00EB5382 /* 296-pizza.png */; };
+		AAC480AA165E5D6C00EB5382 /* 296-pizza@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAC480A8165E5D6C00EB5382 /* 296-pizza@2x.png */; };
 		AACBC1531655B65900B31303 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBC1521655B65900B31303 /* UIKit.framework */; };
 		AACBC1551655B65900B31303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBC1541655B65900B31303 /* Foundation.framework */; };
 		AACBC1571655B65900B31303 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBC1561655B65900B31303 /* CoreGraphics.framework */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AAC480A7165E5D6C00EB5382 /* 296-pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "296-pizza.png"; sourceTree = "<group>"; };
+		AAC480A8165E5D6C00EB5382 /* 296-pizza@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "296-pizza@2x.png"; sourceTree = "<group>"; };
 		AACBC14E1655B65900B31303 /* tekpubTodoDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tekpubTodoDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACBC1521655B65900B31303 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AACBC1541655B65900B31303 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAA770CD165E5C2B007562DC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AAC480A7165E5D6C00EB5382 /* 296-pizza.png */,
+				AAC480A8165E5D6C00EB5382 /* 296-pizza@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		AACBC1431655B65900B31303 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 		AACBC1581655B65900B31303 /* tekpubTodoDb */ = {
 			isa = PBXGroup;
 			children = (
+				AAA770CD165E5C2B007562DC /* Images */,
 				AAE289B8165A493700CE3A87 /* Resources */,
 				AAE28991165A455000CE3A87 /* Libraries */,
 				AACBC1841655B77300B31303 /* UI */,
@@ -268,6 +282,8 @@
 				AACBC18A1655B77300B31303 /* tekpubEditorController.xib in Resources */,
 				AACBC18B1655B77300B31303 /* tekpubTableViewController.xib in Resources */,
 				AAE289BB165A4B3E00CE3A87 /* todo.db in Resources */,
+				AAC480A9165E5D6C00EB5382 /* 296-pizza.png in Resources */,
+				AAC480AA165E5D6C00EB5382 /* 296-pizza@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

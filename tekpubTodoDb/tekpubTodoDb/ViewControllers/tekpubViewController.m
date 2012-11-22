@@ -141,7 +141,12 @@
     }
     
     Todo *todo = [todoItems objectAtIndex:indexPath.row];
+    
+    UIImage *cellimage = [UIImage imageNamed:@"296-pizza.png"];
+    
+    cell.imageView.image = cellimage;
     cell.textLabel.text = todo.text;
+    // cell.detailTextLabel.text = @"Get'er done.";
     
     if (todo.completed) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
