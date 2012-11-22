@@ -137,7 +137,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == Nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
     Todo *todo = [todoItems objectAtIndex:indexPath.row];
@@ -146,7 +146,7 @@
     
     cell.imageView.image = cellimage;
     cell.textLabel.text = todo.text;
-    // cell.detailTextLabel.text = @"Get'er done.";
+    cell.detailTextLabel.text = @"Get'er done.";
     
     if (todo.completed) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
