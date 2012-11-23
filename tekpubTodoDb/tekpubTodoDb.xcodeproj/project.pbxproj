@@ -131,7 +131,6 @@
 		AACBC1581655B65900B31303 /* tekpubTodoDb */ = {
 			isa = PBXGroup;
 			children = (
-				AAA770CD165E5C2B007562DC /* Images */,
 				AAE289B8165A493700CE3A87 /* Resources */,
 				AAE28991165A455000CE3A87 /* Libraries */,
 				AACBC1841655B77300B31303 /* UI */,
@@ -219,6 +218,7 @@
 		AAE289B8165A493700CE3A87 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AAA770CD165E5C2B007562DC /* Images */,
 				AAE289BA165A49BF00CE3A87 /* todo.db */,
 			);
 			path = Resources;
